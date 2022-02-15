@@ -61,7 +61,7 @@ def camera_matrix(location, lookat, up):
 
 
 def load_texture(image_path):
-    image = ti.imread(image_path).astype(float) / 255.0
+    image = ti.tools.imread(image_path).astype(float) / 255.0
     H, W = image.shape[:2]
     texture = ti.Vector.field(3, ti.f32, shape=(H, W))
     texture.from_numpy(image)
