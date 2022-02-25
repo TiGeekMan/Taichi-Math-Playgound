@@ -47,5 +47,5 @@ def do_experiments():
 
 
 do_experiments()
-print(success_count[None] / num_rounds)
+print("Return probability of the drunk man:", success_count[None] / num_rounds)
 ti.profiler.print_kernel_profiler_info()
