@@ -1,5 +1,5 @@
 import taichi as ti
-ti.init()
+ti.init(dynamic_index=True)
 
 num_rounds = 100000
 max_steps = 10000
@@ -15,13 +15,9 @@ end = vec([-1] * dim)
 @ti.func
 def get_random_move(vert):
     index = int(ti.floor(ti.random() * dim))
-    res = vec([1] * dim)
-    for i in ti.static(range(dim)):
-        if i == index:
-            res[i] = -vert[i]
-        else:
-            res[i] = vert[i]
-    return res
+    neighbour = vert
+    neighbour[index] *= -1
+    return neighbour
 
 
 @ti.func
