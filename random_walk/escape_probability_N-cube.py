@@ -1,5 +1,5 @@
 import taichi as ti
-ti.init(arch=ti.cuda)
+ti.init()
 
 num_rounds = 100000
 max_steps = 10000
