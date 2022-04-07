@@ -1,7 +1,7 @@
 import taichi as ti
 ti.init(dynamic_index=True)
 
-num_rounds = 100000
+num_rounds = 10000000
 max_steps = 10000
 success = ti.field(ti.i32, shape=())
 
