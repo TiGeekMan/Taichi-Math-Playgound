@@ -50,8 +50,6 @@ def mark_cell(cell, value):
 
 
 def mark_space(c1, c2, value):
-    """Mark the space between two adjacent cells.
-    """
     c = ((c1[0] + c2[0]) // 2, (c1[1] + c2[1]) // 2)
     mark_cell(c, value)
 
