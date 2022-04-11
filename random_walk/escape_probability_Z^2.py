@@ -53,6 +53,6 @@ def do_experiments():
                 break
 
 do_experiments()
-print("Trur probability:", win_probability(escape_radius))
+print("True probability:", win_probability(escape_radius))
 print("Estimated probability:", success_count[None] / num_rounds)
 ti.profiler.print_kernel_profiler_info()
