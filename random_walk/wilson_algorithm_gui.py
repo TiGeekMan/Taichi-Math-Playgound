@@ -4,11 +4,10 @@ import random
 from taichi.tools.image import imresize
 
 
-cell_w = 80
-cell_h = 80
+N = 80
 margin = 2
-width = 2 * (cell_w + margin) - 1
-height = 2 * (cell_h + margin) - 1
+width = 2 * (N + margin) - 1
+height = 2 * (N + margin) - 1
 anim_speed = 30
 scale = 5
 WALL = [0, 0, 0]
