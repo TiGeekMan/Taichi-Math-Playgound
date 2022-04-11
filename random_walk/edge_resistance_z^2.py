@@ -4,7 +4,7 @@ from taichi.math import ivec2
 ti.init(dynamic_index=True)
 
 num_rounds = 100000
-size = 1000
+size = 500
 
 tree = ti.Vector.field(2, ti.i32, shape=(size, size))
 success = ti.field(ti.i32, shape=())
